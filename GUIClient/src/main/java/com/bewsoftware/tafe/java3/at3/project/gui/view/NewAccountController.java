@@ -38,7 +38,6 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -229,9 +228,7 @@ public class NewAccountController implements ViewController
     /**
      * Verify that the password fulfills the basic requirements.
      * <p>
-     * 1. Minimum of 8 characters in length
-     * 2. Contains at least one CAPITAL letter
-     * 3. Contains at least two numbers: 0 - 9
+     * Minimum of 1 character in length
      *
      * @param password1 text to verify
      * @param password2 text to verify
@@ -242,37 +239,19 @@ public class NewAccountController implements ViewController
     {
         boolean rtn = false;
 
-        if (password1 != null && password1.length() >= 8)
+        if (password1 != null && password1.length() >= 1)
         {
-            Matcher matcher1 = PASSWORD_PATTERN_1.matcher(password1);
-            Matcher matcher2 = PASSWORD_PATTERN_2.matcher(password1);
-
-            if (matcher1.matches())
+            if (password1.equals(password2))
             {
-                if (matcher2.matches())
-                {
-                    if (password1.equals(password2))
-                    {
-                        rtn = true;
-                    } else
-                    {
-                        app.setStatusText("Passwords must be the same.");
-                        secondPasswordField.requestFocus();
-                    }
-                } else
-                {
-                    app.setStatusText("Must contain at least two numbers.");
-                    firstPasswordField.requestFocus();
-                }
+                rtn = true;
             } else
             {
-                app.setStatusText("Must contain at least one UPPERCASE letter.");
-                firstPasswordField.requestFocus();
+                app.setStatusText("Passwords must be the same.");
+                secondPasswordField.requestFocus();
             }
-
         } else
         {
-            app.setStatusText("Must be at least 8 characters long.");
+            app.setStatusText("Must be at least 1 character long.");
             firstPasswordField.requestFocus();
         }
 
@@ -282,9 +261,7 @@ public class NewAccountController implements ViewController
     /**
      * Verify that the username fulfills the basic requirements.
      * <p>
-     * 1. Minimum of 8 characters in length
-     * 2. Begins with an alphabetic character
-     * 3. Contains only alphanumeric characters
+     * Minimum of 1 character in length
      *
      * @param username text to verify
      *
@@ -294,29 +271,12 @@ public class NewAccountController implements ViewController
     {
         boolean rtn = false;
 
-        if (username != null && username.length() >= 8)
+        if (username != null && username.length() >= 1)
         {
-            Matcher matcher1 = USERNAME_PATTERN_1.matcher(username);
-            Matcher matcher2 = USERNAME_PATTERN_2.matcher(username);
-
-            if (matcher1.matches())
-            {
-                if (matcher2.matches())
-                {
-                    rtn = true;
-                } else
-                {
-                    app.setStatusText("Must contain only letters and numbers.");
-                    usernameTextField.requestFocus();
-                }
-            } else
-            {
-                app.setStatusText("Must begin with a letter.");
-                usernameTextField.requestFocus();
-            }
+            rtn = true;
         } else
         {
-            app.setStatusText("Must be at least 8 characters long.");
+            app.setStatusText("Must be at least 1 character long.");
             usernameTextField.requestFocus();
         }
 

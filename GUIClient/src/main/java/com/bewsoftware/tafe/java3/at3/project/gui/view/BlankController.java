@@ -32,7 +32,7 @@ import java.beans.PropertyChangeEvent;
 
 /**
  * This is a dummy controller, just to be compatible with the
- * {@link App#showView(com.bewsoftware.tafe.java3.at2.four.gui.Views) App.setview(view)}
+ * {@link App#showView(com.bewsoftware.tafe.java3.at2.four.gui.Views) App.showView(view)}
  * method.
  *
  * @author <a href="mailto:bw.opensource@yahoo.com">Bradley Willcott</a>

@@ -27,7 +27,7 @@
 package com.bewsoftware.tafe.java3.at3.project.gui;
 
 /**
- * Main class description.
+ * Primary entry point for the application.
  *
  * @author <a href="mailto:bw.opensource@yahoo.com">Bradley Willcott</a>
  *

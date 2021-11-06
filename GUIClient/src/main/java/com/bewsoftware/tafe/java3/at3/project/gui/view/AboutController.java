@@ -34,7 +34,7 @@ import static com.bewsoftware.tafe.java3.at3.project.common.Constants.BUILD_DATE
 import static com.bewsoftware.tafe.java3.at3.project.common.Constants.PROJECT_TITLE;
 import static com.bewsoftware.tafe.java3.at3.project.common.Constants.VERSION;
 /**
- * FXML Controller class for the 'About.fxml' file.
+ * FXML Controller class for the 'About.fxml' file, which is a dialog window.
  *
  * @author <a href="mailto:bw.opensource@yahoo.com">Bradley Willcott</a>
  */

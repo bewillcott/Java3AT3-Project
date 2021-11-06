@@ -52,7 +52,8 @@ import static common.UserAccount.RMI_NAME;
 import static java.util.regex.Pattern.compile;
 
 /**
- * FXML Controller class for the 'NewAccount.fxml' file.
+ * FXML Controller class for the 'NewAccount.fxml' file, which is a form for
+ * creating a new user account, and logging into the chat service.
  *
  * @author <a href="mailto:bw.opensource@yahoo.com">Bradley Willcott</a>
  *

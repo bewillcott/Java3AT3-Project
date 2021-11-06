@@ -27,7 +27,7 @@
 package com.bewsoftware.tafe.java3.at3.project.gui;
 
 /**
- * Views enum description.
+ * Enumeration of all the views to be displayed.
  *
  * @author <a href="mailto:bw.opensource@yahoo.com">Bradley Willcott</a>
  *

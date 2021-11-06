@@ -49,7 +49,8 @@ import static com.bewsoftware.tafe.java3.at3.project.common.Constants.TERMINATE_
 import static com.bewsoftware.tafe.java3.at3.project.gui.Views.CHAT;
 
 /**
- * ChatController class description.
+ * FXML Controller class for the 'Chat.fxml' file, which is a form for on-line
+ * messaging.
  *
  * @author <a href="mailto:bw.opensource@yahoo.com">Bradley Willcott</a>
  *

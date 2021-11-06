@@ -28,7 +28,7 @@ package com.bewsoftware.tafe.java3.at3.project.gui;
 
 import java.beans.PropertyChangeListener;
 /**
- * ViewController interface description.
+ * Common interface for all view controllers.
  *
  * @author <a href="mailto:bw.opensource@yahoo.com">Bradley Willcott</a>
  *

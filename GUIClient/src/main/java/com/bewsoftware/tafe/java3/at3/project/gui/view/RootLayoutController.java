@@ -53,7 +53,8 @@ import static com.bewsoftware.tafe.java3.at3.project.gui.Views.LOGIN;
 import static com.bewsoftware.tafe.java3.at3.project.gui.Views.NEW_ACCOUNT;
 
 /**
- * FXML Controller class for the 'RootLayout.fxml' file.
+ * FXML Controller class for the 'RootLayout.fxml' file, which is the main
+ * window of the application.
  *
  * @author <a href="mailto:bw.opensource@yahoo.com">Bradley Willcott</a>
  *

@@ -50,7 +50,8 @@ import static com.bewsoftware.tafe.java3.at3.project.gui.Views.LOGIN;
 import static common.UserAccount.RMI_NAME;
 
 /**
- * FXML Controller class for the 'Login.fxml' file.
+ * FXML Controller class for the 'Login.fxml' file, which is a form for
+ * logging into the chat service.
  *
  * @author <a href="mailto:bw.opensource@yahoo.com">Bradley Willcott</a>
  *

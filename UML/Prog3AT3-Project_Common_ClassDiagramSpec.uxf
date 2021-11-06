@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>530</x>
+      <y>130</y>
+      <w>310</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=center
+fontsize=16
+lw=2
+
+*Java3 AT3 Project*
+Common Library Specification
+v1.0
+
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>910</x>
+      <y>200</y>
+      <w>180</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>valign=center
+
+Copyright © 2021
+-
+Name: Bradley Willcott
+ID:   M198449
+Date: 6 November 2021
+
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>310</y>
+      <w>250</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>bg=green
+transparency=0
+layer=1
+AvlTree
+--
+- count : int
+- root : Node&lt;E&gt;
+
+--
++ AvlTree()
+
++ add(e:E) : boolean
++ clear() : void
++ contains(o:Object) : boolean
++ delete(target:E) : boolean
++ display() : void
++ get(index:int) : E
++ indexOf(o:Object) : int
++ isEmpty() : boolean
++ iterator() : Iterator&lt;E&gt;
++ remove(o:Object) : boolean
++ size() : int
++ toArray(a:T[]) : T[]
++ toString() : String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>680</x>
+      <y>310</y>
+      <w>280</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>bg=green
+transparency=0
+layer=1
+LinkedList
+--
+- allowDuplicates : boolean
+- current : Node&lt;E&gt;
+- first : Node&lt;E&gt;
+- last : Node&lt;E&gt;
+- size : int
+
+--
++ LinkedList()
++ linkedList(allowDuplicate:boolean)
+
++ add(item:E) : boolean
++ clear() : void
++ contains(item:E) : boolean
++ first() : E
++ get(item:E) : E
++ hasNext() : boolean
++ insert(item:E) : boolean
++ insertAfter(item:E) : boolean
++ iterator() : Iterator&lt;E&gt;
++ last() : E
++ next(item:E) : boolean
++ next() : E
++ remove() : E
++ size() : int
++ toString() : String
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>730</y>
+      <w>470</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>bg=green
+transparency=0
+layer=1
+&lt;&lt;utility&gt;&gt;
+PBKDF2
+--
+
+--
+_+ creatHash(password:String) : String_
+_+ generateKey(n:int) : SecretKey_
+_+ getKeyFromPassword) : SecretKey_
+_+ verifyPassword(password:String, correctHash:String) : boolean_
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

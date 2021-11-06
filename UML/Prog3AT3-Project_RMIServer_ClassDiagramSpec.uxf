@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>530</x>
+      <y>280</y>
+      <w>390</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>bg=green
+transparency=0
+layer=1
+Server
+--
+- users : AvlTree&lt;User&gt;
+
+--
+_+ main(args:String[]) : void_
+
++ Server()
+
++ create(username:String, password:String) : boolean
++ login(username:String, password:String) : boolean
+
+{innerclass
+User
+--
++ passwordHash : String
++ username : String
+
+--
++ User(username:String, passwordHash:String)
+
+innerclass}
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>950</x>
+      <y>150</y>
+      <w>180</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>valign=center
+
+Copyright © 2021
+-
+Name: Bradley Willcott
+ID:   M198449
+Date: 6 November 2021
+
+group=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>570</x>
+      <y>80</y>
+      <w>310</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=center
+fontsize=16
+lw=2
+
+*Java3 AT3 Project*
+RMI Server Specification
+v1.0
+
+group=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

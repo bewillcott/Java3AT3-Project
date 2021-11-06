@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <help_text/>
+  <zoom_level>11</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>968</x>
+      <y>154</y>
+      <w>198</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>valign=center
+
+Copyright © 2021
+-
+Name: Bradley Willcott
+ID:   M198449
+Date: 6 November 2021
+
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>550</x>
+      <y>77</y>
+      <w>341</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=center
+fontsize=16
+lw=2
+
+*Java3 AT3 Project*
+Specification
+v1.0
+
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>264</x>
+      <y>297</y>
+      <w>462</w>
+      <h>253</h>
+    </coordinates>
+    <panel_attributes>Common Library
+--
+bg=orange
+group=7</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>297</x>
+      <y>352</y>
+      <w>176</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>bg=green
+transparency=0
+layer=1
+AvlTree
+--
+
+--
+
+
+group=7</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>297</x>
+      <y>451</y>
+      <w>176</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>bg=green
+transparency=0
+layer=1
+LinkedList
+--
+
+--
+
+
+group=7</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>506</x>
+      <y>352</y>
+      <w>176</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>bg=green
+transparency=0
+layer=1
+PBKDF2
+--
+
+--
+
+
+group=7</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>748</x>
+      <y>286</y>
+      <w>462</w>
+      <h>363</h>
+    </coordinates>
+    <panel_attributes>GUI Client
+--
+bg=orange
+group=4</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>792</x>
+      <y>341</y>
+      <w>176</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>bg=green
+transparency=0
+layer=1
+App
+--
+
+--
+
+
+group=4</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>792</x>
+      <y>440</y>
+      <w>176</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>bg=green
+transparency=0
+layer=1
+RootLayout
+--
+
+--
+
+
+group=4</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1001</x>
+      <y>341</y>
+      <w>176</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>bg=green
+transparency=0
+layer=1
+Login
+--
+
+--
+
+
+group=4</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1001</x>
+      <y>440</y>
+      <w>176</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>bg=green
+transparency=0
+layer=1
+NewAccount
+--
+
+--
+
+
+group=4</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>792</x>
+      <y>539</y>
+      <w>176</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>bg=green
+transparency=0
+layer=1
+Chat
+--
+
+--
+
+
+group=4</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>264</x>
+      <y>704</y>
+      <w>462</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>RMI Server
+--
+bg=orange
+group=5</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>297</x>
+      <y>759</y>
+      <w>176</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>bg=green
+transparency=0
+layer=1
+Server
+--
+
+--
+
+
+group=5</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>748</x>
+      <y>704</y>
+      <w>462</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>Socket Server
+--
+bg=orange
+group=6</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>781</x>
+      <y>759</y>
+      <w>176</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>bg=green
+transparency=0
+layer=1
+Server
+--
+
+--
+
+
+group=6</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

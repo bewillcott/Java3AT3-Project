@@ -1,0 +1,7 @@
+
+### NetBeans ###
+**/nbproject/
+**/target/
+**/Screenshots/
+*.csv
+~*.*

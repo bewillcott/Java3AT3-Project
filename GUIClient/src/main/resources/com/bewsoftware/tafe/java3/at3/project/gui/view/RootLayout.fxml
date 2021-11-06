@@ -70,6 +70,7 @@
                 </Menu>
                 <Menu text="_Help">
                     <items>
+                        <MenuItem fx:id="manualMenuItem" onAction="#handleManualMenuItem" text="_Manual" />
                         <MenuItem fx:id="aboutMenuItem" onAction="#handleAboutMenuItem" text="_About" />
                     </items>
                 </Menu>

@@ -43,10 +43,12 @@ import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
+import static com.bewsoftware.tafe.java3.at3.project.common.Constants.log;
 import static com.bewsoftware.tafe.java3.at3.project.gui.Views.BLANK;
 import static com.bewsoftware.tafe.java3.at3.project.gui.Views.CHAT;
 import static com.bewsoftware.tafe.java3.at3.project.gui.Views.LOGIN;
@@ -323,6 +325,18 @@ public class RootLayoutController implements ViewController
     }
 
     /**
+     * Handle the Help/Manual menu item event.
+     *
+     * @param event
+     */
+    @FXML
+    private void handleManualMenuItem(ActionEvent event)
+    {
+        showHelpDialog();
+        event.consume();
+    }
+
+    /**
      * Handle the User/New Account menu item event.
      *
      * @param event
@@ -382,6 +396,36 @@ public class RootLayoutController implements ViewController
         } catch (IOException ex)
         {
             Logger.getLogger(RootLayoutController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    /**
+     * Opens the Help dialog.
+     */
+    private void showHelpDialog()
+    {
+        try
+        {
+            // Load the fxml file and create a new stage for the popup dialog.
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(App.class.getResource("view/Help.fxml"));
+            AnchorPane page = (AnchorPane) loader.load();
+
+            // Create the dialog Stage.
+            Stage dialogStage = new Stage();
+            dialogStage.setTitle("Help");
+            dialogStage.initModality(Modality.NONE);
+            dialogStage.initOwner(app.getPrimaryStage());
+            Scene scene = new Scene(page);
+            dialogStage.setScene(scene);
+            dialogStage.setResizable(false);
+
+
+            // Show the dialog and wait until the user closes it
+            dialogStage.showAndWait();
+        } catch (IOException ex)
+        {
+            log(ex.toString());
         }
     }
 

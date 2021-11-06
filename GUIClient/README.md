@@ -10,7 +10,7 @@ This application allows the user to perform the functions:
 
 JavaFX App
 
-## Main
+### Main
 
 Primary entry point for the application.
 
